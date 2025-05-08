@@ -5,13 +5,13 @@ Feature: BasePage Functionality
 
   Scenario: Navigate to a URL
     Given I open the browser
-    When I navigate to "https://example.com"
+    When I navigate to "https://seleniumexamplepage.com"
     Then I should see the page title as "Example Domain"
 
   Scenario: Verify current URL
-    Given I have navigated to "https://example.com"
+    Given I have navigated to "https://seleniumexamplepage.com"
     When I fetch the current URL
-    Then the URL should be "https://example.com"
+    Then the URL should be "https://seleniumexamplepage.com"
 
   Scenario: Verify page title
     Given I have navigated to a webpage
